@@ -18,6 +18,7 @@ export const fetchInvoices = () => (dispatch: any) => {
             `${ROOT_URL}/spaces/${SPACE_ID}/entries?access_token=${CDN_ACCESS_TOKEN}
             &content_type=invoices`
             ).then(response => dispatch(getInvoices(response)))
+            
 }
 
 // export type InvoiceAction = GetInvoices;

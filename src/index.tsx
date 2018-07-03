@@ -17,7 +17,7 @@ import './index.css';
 
 import Dashboard from './pages/Dashboard';
 
-const middleware = [ thunk ]
+const middleware = [ thunk ];
 // if (process.env.NODE_ENV !== 'production') {
 //   middleware.push(createLogger())
 // }
