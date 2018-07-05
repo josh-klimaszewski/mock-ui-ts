@@ -1,0 +1,27 @@
+.dashboard {
+  background-color: lightgray;
+  width: 85%;
+  display: flex; }
+  .dashboard .feed {
+    margin: 10px;
+    width: 50%; }
+    .dashboard .feed .cards {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+  .dashboard .summary {
+    margin: 10px;
+    width: 25%;
+    background-color: white;
+    height: 300px; }
+    .dashboard .summary .summaryCard {
+      display: flex;
+      flex-direction: column; }
+      .dashboard .summary .summaryCard .totalCashWrapper {
+        margin: 10px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between; }
+      .dashboard .summary .summaryCard .bar {
+        margin: 25px auto 0 auto;
+        width: 85%; }

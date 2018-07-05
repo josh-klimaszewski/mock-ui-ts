@@ -1,0 +1,14 @@
+.card {
+    width: 300px;
+    // margin: 10px;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    .list-item {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

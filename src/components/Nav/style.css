@@ -1,0 +1,29 @@
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  width: 15%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12), -2px 2px 3px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .nav-bar .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; }
+    .nav-bar .links a, .nav-bar .links figure {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      justify-content: space-between;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.5); }
+    .nav-bar .links a:hover {
+      background-color: #def2f8;
+      color: #003a5d; }
+    .nav-bar .links .active {
+      background-color: #def2f8;
+      color: #003a5d;
+      font-weight: bolder; }
+      .nav-bar .links .active .material-icons {
+        color: #003a5d; }

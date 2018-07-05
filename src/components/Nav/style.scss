@@ -1,0 +1,39 @@
+$hoverblue: #def2f8;
+$activeblue: #003a5d;
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    width: 15%;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.12), -2px 2px 3px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    .links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        a, figure {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            justify-content: space-between;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.50);
+        }
+        a:hover {
+            background-color: $hoverblue;
+            color: $activeblue;
+        }
+        .active {
+            background-color: $hoverblue;
+            color: $activeblue; 
+            font-weight: bolder;
+            .material-icons {
+                color: $activeblue;
+            }
+        }
+    }
+}
+

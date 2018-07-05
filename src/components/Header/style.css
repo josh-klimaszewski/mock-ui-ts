@@ -1,0 +1,42 @@
+.dashHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12), 2px 2px 3px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .dashHeader .dashHeaderCompany {
+    display: flex;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    width: 15%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    .dashHeader .dashHeaderCompany .sallyLogo {
+      width: 70%;
+      height: 45%;
+      margin-left: 10%;
+      margin-top: 10%; }
+  .dashHeader .dashHeaderActions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    margin-left: 2%; }
+    .dashHeader .dashHeaderActions .material-icons {
+      font-size: 45px;
+      color: #008aad;
+      font-weight: bold; }
+    .dashHeader .dashHeaderActions span {
+      margin: 10px;
+      font-size: 15px;
+      color: #008aad;
+      font-weight: bolder; }
+  .dashHeader .dashHeaderSearch {
+    display: flex;
+    margin-left: 25%; }
+    .dashHeader .dashHeaderSearch .material-icons {
+      font-size: 40px;
+      color: #008aad; }
