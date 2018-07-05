@@ -1,6 +1,11 @@
+import { Card, CardContent, Divider, List } from '@material-ui/core';
 import * as React from "react";
 import { connect } from "react-redux";
 import { fetchInvoices } from "../../actions";
+
+import InvoiceList from './InvoiceList';
+import Summary from './Summary';
+
 
 // import { Card, CardContent, Divider, List } from '@material-ui/core';
 class InvoicesCard extends React.Component<any, any> {
@@ -23,8 +28,30 @@ class InvoicesCard extends React.Component<any, any> {
     this.props.fetchInvoices();
   }
   public render() {
-    // const invoiceTotal = this.getInvoiceTotal();
-    return <div>hi</div>;
+    const invoiceTotal = this.getInvoiceTotal();
+    return (
+        <Card className="card">
+            <CardContent className="card-header">
+                Invoices
+            </CardContent>
+            <List>
+                <Summary 
+                    className="summary"
+                    primary="Coming Due"
+                    amount={invoiceTotal}
+                    renderExpanded={() => <InvoiceList invoices={this.props.invoices} />}
+                />
+                <Divider />
+                <Summary 
+                    className="summary"
+                    primary="Past Due"
+                    amount={5560}
+                    renderExpanded={() => <InvoiceList invoices={this.props.invoices} />}
+                />
+                <Divider />
+            </List>
+        </Card>
+    )
   }
 }
 
