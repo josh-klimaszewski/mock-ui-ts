@@ -4,7 +4,9 @@ import { connect } from "react-redux";
 import { fetchInvoices } from "../../actions";
 
 import InvoiceList from './InvoiceList';
+import './style.css';
 import Summary from './Summary';
+
 
 
 // import { Card, CardContent, Divider, List } from '@material-ui/core';
