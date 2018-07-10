@@ -10,13 +10,14 @@ import Summary from './Summary';
 
 
 // import { Card, CardContent, Divider, List } from '@material-ui/core';
-class InvoicesCard extends React.Component<any, any> {
+export class InvoicesCard extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
         invoiceTotal: 0,
         invoices: []
     };
+    this.getInvoiceTotal = this.getInvoiceTotal.bind(this);
   }
   public getInvoiceTotal = () => {
     const invoices = this.props.invoices;

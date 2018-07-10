@@ -1,6 +1,6 @@
-import * as enzyme from 'enzyme';<u></u>
-import React from 'react';
-import renderer from 'react-test-renderer';
+import * as enzyme from 'enzyme';
+import * as React from 'react';
+
 import Nav from './Nav';
 
 describe('Nav bar', () => {
@@ -23,5 +23,14 @@ describe('Nav bar', () => {
         wrapper.instance().setActiveNav('dashboard');
         expect(wrapper.state('activeNav')).toEqual('dashboard');
     })
+    // it('sets active class', () => {
+    //     const navItem = wrapper.find('Link').last();
+    //     expect(navItem.hasClass('active')).toBe(false);
+    //     navItem.simulate('click');
+    
+    //     wrapper.update();
+     
+    //     expect(navItem.hasClass('active')).toBe(true);
+    // })
 })
 
